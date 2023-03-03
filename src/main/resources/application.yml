@@ -9,3 +9,15 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
+  servlet:
+    multipart:
+#      Dung lượng tối đa của file mà người dùng có thể upload
+      max-file-size: 10MB
+#      Dung lượng tối đa của request ( tham số ) mà người dùng truyền lên
+      max-request-size: 10MB
+
+jwt:
+  privateKey: KPncA1Rx525MnF63mELk+7I4Skh0eAnoY+HJ14ow70w=
+
+upload:
+  path: /Users/binhcc/Desktop
