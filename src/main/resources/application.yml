@@ -20,4 +20,8 @@ jwt:
   privateKey: KPncA1Rx525MnF63mELk+7I4Skh0eAnoY+HJ14ow70w=
 
 upload:
-  path: /Users/binhcc/Desktop
+  path: /Users/binhcc/Desktop/uploads
+
+redis:
+  host: localhost
+  port: 6380

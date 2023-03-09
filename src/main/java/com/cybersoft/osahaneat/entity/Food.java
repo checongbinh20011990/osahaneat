@@ -16,8 +16,14 @@ public class Food {
     @Column(name = "price")
     private double price;
 
+    @Column(name = "description")
+    private String desc;
+
     @Column(name = "instruction")
     private String intruction;
+
+    @Column(name = "image")
+    private String image;
 
     @ManyToOne
     @JoinColumn(name = "cate_res_id")
@@ -29,8 +35,24 @@ public class Food {
     @OneToMany(mappedBy = "food")
     private Set<RatingFood> listratingFood;
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
     public Set<RatingFood> getListratingFood() {
         return listratingFood;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public void setListratingFood(Set<RatingFood> listratingFood) {
